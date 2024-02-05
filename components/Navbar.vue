@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{
-      ' fixed top-0 z-10 py-2 w-screen bg-primary bg-opacity-40 transition-all duration-300 ease-in-out':
+      ' fixed top-0 z-10 py-1 w-screen bg-white bg-opacity-30 transition-all duration-300 ease-in-out backdrop-blur-sm':
         header,
     }"
   >

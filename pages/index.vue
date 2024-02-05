@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="z-1 mb-14 max-w-screen-xl m-auto pt-2 px-5">
+  <div class="z-1 mb-14 max-w-screen-xl m-auto pt-2 px-5 max-sm:mb-6">
     <div class="flex flex-col gap-3">
       <h1 class="text-3xl font-semibold text-primary">HotHit</h1>
       <CardTop />

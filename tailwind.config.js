@@ -18,14 +18,14 @@ export default {
         mytheme: {
           primary: "#190C5E",
           secondary: "#221D37",
-          neutral: "#3d4451",
+          neutral: "#ffffff",
           "base-100": "#ffffff",
         },
         backgroundSize: {
           auto: "auto",
           cover: "cover",
           contain: "contain",
-          "zoom": "150rem",
+          zoom: "150rem",
         },
       },
       "light",
