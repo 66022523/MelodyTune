@@ -13,9 +13,9 @@
         </div>
         <input
           type="text"
-          class="bg-white text-primary outline-none input-md w-1/2 rounded-full drop-shadow-lg max-sm:w-full"
+          class="bg-white text-primary font-medium outline-none input-md w-1/2 rounded-full drop-shadow-lg max-sm:w-full"
           placeholder="&#xF002;"
-          style="font-family: Arial, FontAwesome; font-size: 20px"
+          style="font-family: kanit, FontAwesome; font-size: 20px"
         />
         <h1 class="text-2xl font-bold text-primary sm:text-3xl">Recently</h1>
         <!-- Hashtag -->
@@ -25,11 +25,7 @@
         </div>
         <!-- Songs -->
         <div class="flex gap-4 max-sm:grid grid-cols-2">
-          <CardSong
-            class="w-1/3 max-sm:w-full"
-            text="Sevan"
-            image="/img/card/sevan01.png"
-          />
+          <CardSong class="w-1/3 max-sm:w-full" :songs="song[3]" />
         </div>
         <h1 class="text-2xl font-bold text-primary sm:text-3xl">Hot</h1>
         <!-- Hashtag -->
@@ -42,21 +38,18 @@
         <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-2">
           <CardSong
             class="w-full"
-            text="พี่ชอบหนูที่สุดเลย"
-            image="img/card/PhiChopNu.png"
-          />
-          <CardSong
-            class="w-full"
-            text="ฟ้ารักพ่อ"
-            image="/img/card/DILF.png"
-          />
-          <CardSong
-            class="w-full"
-            text="มาแตร์เดอี"
-            image="img/card/Materdei.png"
+            v-for="index in 3"
+            :key="index"
+            :songs="song[index - 1]"
           />
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import data_song from "~/data/songs.json";
+
+const song = ref(data_song);
+</script>

@@ -55,7 +55,7 @@
         </NuxtLink>
         <!-- Profile -->
         <NuxtLink
-          href="#"
+          to="#"
           tabindex="0"
           role="button"
           class="btn btn-ghost btn-circle no-animation avatar"
