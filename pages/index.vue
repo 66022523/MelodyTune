@@ -7,7 +7,7 @@
       <h1 class="text-3xl font-bold text-primary">Recommend</h1>
       <div class="flex gap-3 max-sm:flex-wrap justify-center">
         <CardSong
-          class="w-1/3"
+          class="sm:w-1/3"
           v-for="index in 3"
           :key="index"
           :songs="song[index - 1]"

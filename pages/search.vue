@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="min-h-screen p-10 max-sm:p-5">
+    <div class="p-10 max-sm:p-5">
       <div class="grid gap-y-5">
         <div class="flex justify-between items-center">
           <img class="w-60 max-sm:w-40" src="/img/search_logo.png" />

@@ -1,7 +1,7 @@
 <template>
   <div
     data-theme="mytheme"
-    class="bg-cover bg-center bg-[url('public/img/bg.jpg')]"
+    class="min-h-screen bg-cover bg-center bg-[url('public/img/bg.jpg')]"
   >
     <slot />
   </div>
