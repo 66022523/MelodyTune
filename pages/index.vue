@@ -7,7 +7,7 @@
       <h1 class="text-3xl font-bold text-primary">Recommend</h1>
       <div class="flex gap-3 max-sm:flex-wrap justify-center">
         <CardSong
-          class="sm:w-1/3"
+          class="h-60 sm:w-1/3"
           v-for="index in 3"
           :key="index"
           :songs="song[index - 1]"
@@ -41,5 +41,4 @@ import data_song from "~/data/songs.json";
 
 const top = ref(data);
 const song = ref(data_song);
-console.log(data_song[0].link);
 </script>

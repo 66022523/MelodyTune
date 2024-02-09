@@ -1,15 +1,12 @@
 <template>
-  <button
+  <NuxtLink
+    to=""
     class="btn btn-secondary rounded-full text-white text-xl font-semibold max-sm:text-sm"
   >
-    <h1>#{{ text }}</h1>
-  </button>
+    <h1># {{ tags.title }}</h1>
+  </NuxtLink>
 </template>
+
 <script setup>
-defineProps({
-  text: {
-    type: String,
-    default: "text",
-  },
-});
+defineProps({ tags: Object });
 </script>

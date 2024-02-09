@@ -16,7 +16,32 @@
   },
   {
     "name": "Sevan",
-    "image": "/img/card/sevan01.png",
+    "image": "/img/card/sevan.png",
+    "link": "#"
+  },
+  {
+    "name": "Booty Bomb",
+    "image": "/img/card/booty_bomb.png",
+    "link": "#"
+  },
+  {
+    "name": "มูเตล",
+    "image": "/img/card/muteru.png",
+    "link": "#"
+  },
+  {
+    "name": "ฉันจะฉาปเธอ",
+    "image": "/img/card/chab.png",
+    "link": "#"
+  },
+  {
+    "name": "โลเล",
+    "image": "/img/card/lolay.png",
+    "link": "#"
+  },
+  {
+    "name": "DAMN",
+    "image": "/img/card/DAMN.png",
     "link": "#"
   }
 ]
