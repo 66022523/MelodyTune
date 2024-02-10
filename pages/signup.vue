@@ -62,8 +62,13 @@
       </div>
 
       <div>
-        <select class="bg-white h-12 rounded-lg mt-5 w-32" name="day" id="day">
-          <option>DAY</option>
+        <select
+          class="bg-white h-12 rounded-lg mt-5 w-32 font-medium"
+          name="day"
+          id="day"
+          placeholder="day"
+        >
+          <option value="day">DAY</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -96,7 +101,10 @@
           <option value="30">30</option>
           <option value="31">31</option>
         </select>
-        <select class="bg-white h-12 rounded-lg mt-5 ml-3 w-32" name="month">
+        <select
+          class="bg-white h-12 rounded-lg mt-5 ml-3 w-32 font-medium"
+          name="month"
+        >
           <option>MONTH</option>
           <option value="january">JANUARY</option>
           <option value="february">FEBRUARY</option>
@@ -111,7 +119,10 @@
           <option value="november">NOVEMBER</option>
           <option value="december">DECEMBER</option>
         </select>
-        <select class="bg-white h-12 rounded-lg mt-5 ml-3 w-32" name="year">
+        <select
+          class="bg-white h-12 rounded-lg mt-5 ml-3 w-32 font-medium"
+          name="year"
+        >
           <option>YEAR</option>
           <option value="2000">2000</option>
           <option value="2001">2001</option>
@@ -145,7 +156,7 @@
       <div class="justify-center flex">
         <button
           type="submit"
-          class="btn bg-primary text-2xl rounded-full w-64 text-white mt-5"
+          class="btn btn-primary text-2xl rounded-full w-64 text-white mt-5"
         >
           Sign Up
         </button>

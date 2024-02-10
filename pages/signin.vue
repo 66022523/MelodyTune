@@ -23,7 +23,7 @@
         <div class="flex justify-center">
           <button
             type="submit"
-            class="btn btn-primary text-2xl rounded-full w-32 text-white no-animation"
+            class="btn btn-primary text-2xl rounded-full w-32 text-white"
           >
             Sign In
           </button>
