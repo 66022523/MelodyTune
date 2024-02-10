@@ -25,7 +25,11 @@
         </div>
         <!-- LoGo -->
         <NuxtLink to="/" class="flex flex-shrink-0 items-center">
-          <img class="h-9 w-auto max-md:h-8" src="public/img/logo.png" alt="" />
+          <img
+            class="h-9 w-auto max-md:h-8"
+            src="public/img/logotext.png"
+            alt=""
+          />
         </NuxtLink>
         <!-- link on laptop -->
         <div class="hidden md:flex">
@@ -55,7 +59,7 @@
         </NuxtLink>
         <!-- Profile -->
         <NuxtLink
-          to="#"
+          to="/signin"
           tabindex="0"
           role="button"
           class="btn btn-ghost btn-circle no-animation avatar"
