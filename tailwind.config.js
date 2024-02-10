@@ -10,9 +10,6 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        my_inner: "inset 0px -23px 32px 5px rgba(0, 0, 0, 0.59)",
-      },
     },
   },
   plugins: [require("daisyui")],

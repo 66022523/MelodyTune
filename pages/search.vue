@@ -86,10 +86,8 @@ watch(searchText, () => {
     console.log(song);
     if (song.length !== 0) {
       song_search.value = song;
-      console.log(song_search.value[0].name);
     } else if (song.length === 0) {
       song_search.value = null;
-      console.log(song_search.value);
     }
   } else if (searchText.length === 0) {
     searchText = ref(null);

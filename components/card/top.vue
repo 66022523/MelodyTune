@@ -19,7 +19,6 @@
         <button class="btn btn-primary rounded-full text-white">
           Readmore
         </button>
-        <i class="fa-solid fa-paper-plane-top"></i>
       </div>
     </div>
   </div>
