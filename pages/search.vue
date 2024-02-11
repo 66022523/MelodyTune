@@ -82,8 +82,6 @@ watch(searchText, () => {
     const song = data_song.filter((s) =>
       s.name.toLowerCase().includes(searchText.value.toLowerCase())
     );
-
-    console.log(song);
     if (song.length !== 0) {
       song_search.value = song;
     } else if (song.length === 0) {
