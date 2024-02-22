@@ -19,34 +19,34 @@
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li><NuxtLink to="/music">Music</NuxtLink></li>
-            <li><NuxtLink to="#">Playlist</NuxtLink></li>
+            <li><NuxtLink to="#">Genres</NuxtLink></li>
             <li><NuxtLink to="#">New Releases</NuxtLink></li>
           </ul>
         </div>
         <!-- LoGo -->
-        <NuxtLink to="/" class="flex flex-shrink-0 items-center">
+        <NuxtLink to="/" class="flex flex-shrink-0 mb-3 max-md:mb-2">
           <img
-            class="h-9 w-auto max-md:h-8"
-            src="public/img/logotext.png"
+            class="h-10 w-auto max-md:h-[29px]"
+            src="/img/Logo_with_icon.png"
             alt=""
           />
         </NuxtLink>
         <!-- link on laptop -->
         <div class="hidden md:flex">
-          <ul class="menu-horizontal gap-5 px-5">
+          <ul class="menu-horizontal gap-5 px-5 max-lg:px-3 max-lg:gap-2">
             <li>
               <HoverUnderline text="Music" link="/music" />
             </li>
             <li>
-              <HoverUnderline text="Playlist" link="#" />
+              <HoverUnderline text="Genres" link="#" />
             </li>
             <li>
-              <HoverUnderline text="NewReleases" link="#" />
+              <HoverUnderline text="NewReleases" link="/" />
             </li>
           </ul>
         </div>
       </div>
-      <div class="navbar-end gap-2 max-md:gap-3">
+      <div class="navbar-end gap-5 max-lg:gap-2">
         <!-- Search -->
         <NuxtLink to="/search" class="flex gap-2">
           <div>
@@ -62,11 +62,12 @@
           to="/signin"
           tabindex="0"
           role="button"
-          class="btn btn-ghost btn-circle no-animation avatar"
+          class="flex flex-row items-center gap-[5px] border-2 border-primary rounded-full py-2 px-2 max-md:py-1"
         >
-          <div class="w-10 rounded-full">
-            <img src="/img/profile.png" />
+          <div>
+            <i class="fa-solid fa-user fa-lg"></i>
           </div>
+          <span class="text-xl font-bold max-md:font-semibold">Sign in</span>
         </NuxtLink>
       </div>
     </div>

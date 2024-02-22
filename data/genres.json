@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "HYBS ประกาศยุบวง นี่คือเพลงที่เราจะคิดถึงทุกครั้งที่ฟัง",
+    "img": "/img/playlist/hybs.jpeg",
+    "link": "#",
+    "date": "15 February 2024"
+  },
+  {
+    "id": 2,
+    "name": "ส่งเพลงจีบทุกวันอยากเป็นแค่เพื่อนแกมั้ง",
+    "img": "/img/playlist/love.png",
+    "link": "#",
+    "date": "17 February 2024"
+  },
+  {
+    "id": 3,
+    "name": "ไม่มีหรอกเพลงคลั่งรัก มีแต่คนที่คลั่งน้ำตา",
+    "img": "/img/playlist/sad.png",
+    "link": "#",
+    "date": "19 February 2024"
+  }
+]

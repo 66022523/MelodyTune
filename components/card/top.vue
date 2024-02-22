@@ -1,17 +1,17 @@
 <template>
   <div class="card w-full lg:card-side">
     <div class="relative rounded-3xl lg:w-11/12">
-      <a href="#" class="w-fit">
+      <NuxtLink :to="song.link" class="w-fit">
         <img :src="song.img" class="w-full" />
         <div
           class="absolute inset-x-0 bottom-2 text-white font-semibold text-center text-xl xl:text-2xl"
         >
           {{ song.name_song }}
         </div>
-      </a>
+      </NuxtLink>
     </div>
     <div class="card-body">
-      <NuxtLink class="card-title text-4xl xl:text-5xl" to="#">{{
+      <NuxtLink class="card-title text-4xl xl:text-5xl" :to="song.link">{{
         song.topic
       }}</NuxtLink>
       <span class="line-clamp-4">{{ song.description }}</span>

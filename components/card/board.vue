@@ -10,7 +10,7 @@
     </div>
     <div class="grid gap-6">
       <Minidata
-        image="/img/card/Seven.png"
+        image="/img/card/sevan.png"
         text="#1  Seven - 정국 (Jung Kook)"
       />
       <Minidata image="/img/card/D3.png" text="#2 3D - 정국 (Jung Kook)" />
