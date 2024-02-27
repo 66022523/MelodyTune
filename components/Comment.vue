@@ -1,8 +1,12 @@
 <template>
   <div>
-    <div class="flex gap-5 items-center">
-      <div>
-        <i class="fa-solid fa-user fa-2xl text-white"></i>
+    <div class="flex gap-x-3 items-center">
+      <div
+        class="avatar size-10 rounded-full ring ring-white ring-offset-base-100 ring-offset-0"
+      >
+        <div class="rounded-full">
+          <img src="/img/profile/pawarich.jpeg" />
+        </div>
       </div>
       <span class="text-white font-semibold text-2xl">{{ name }}</span>
     </div>

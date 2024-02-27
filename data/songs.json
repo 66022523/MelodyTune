@@ -2,55 +2,69 @@
   {
     "id": 1,
     "name": "พี่ชอบหนูที่สุดเลย",
-    "image": "img/card/PhiChopNu.png",
-    "link": "#"
+    "image": "/img/card/phchopnu.png",
+    "topic": "คนที่เจ็บใจที่สุดคือคนที่เห็นเธอโดนทำร้ายจิตใจ",
+    "profile": "/img/profile/pawarich.jpeg",
+    "makeby": "Pawarich Inthaphan",
+    "date": "19 July 2024",
+    "description": "หนึ่งในเรื่องราวจากเพลง “เธอชอบมันหรือชอบร้องไห้มากกว่ากัน - HardBoy” เพลงใหม่จากคณะ Hard Boy ค่าย Gene Labเจ้าของเพลง “Kiss MeBaby,ค่ำคืนนั้น” ที่คราวนี้กลับมาพร้อมเพลงเตือนสติให้คิดได้สักที“ว่าถ้าเขารักเราจริงเขาไม่ทำแบบนี้หรอก” ทุกคนส่วนใหญ่อาจจะรู้จักHard Boy จากเพลงเร็วของเขาแต่ครั้งนี้กลับมา พร้อมเพลงช้าบาดใจสำหรับคนที่เบื่อแล้วกับการที่จะปลอบใจเธอทุกครั้งที่โดนเขาทำร้ายเลยอยากบอกออกไปว่า“เธอชอบมันหรือชอบร้องไห้มากกว่า”แต่ถึงจะเป็นเพลงช้าก็ยังคงเอกลักษณ์ของความเป็น Glam Rock ของ Hard Boy ไว้เต็มเปี่ยมไม่ว่าจะเป็นการแต่งตัวไลน์ Solo พร้อม High Note จากคุณภีร์ และก็ภาพเรื่องราวใน MV ที่ค่อนข้างจะ 80'sเหมือนเดิมเลยส่วนเนื้อเพลงก็ค่อนข้างจะเตือนสติได้ดีเลยโดยเฉพาะท่อน“ถ้าชอบร้องไห้เหมือนเดิมทุกวันก็อยู่กับมันต่อไปถ้าสมองเธอนั้นทำงานได้ดีเธอจะรู้ต้องคิดยังไง”",
+    "spotify": "https://open.spotify.com/track/3o76rqI7ZLB9DJYxcbWa2Z?autoplay=true",
+    "Youtube": "https://youtu.be/V7DyE7qvtEg?si=0zhhuM10yrdLm1Ts",
+    "Apple_Music": "https://music.apple.com/th/album/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%A1-%E0%B8%99%E0%B8%AB%E0%B8%A3-%E0%B8%AD%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%A3-%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%AB-%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7-%E0%B8%B2%E0%B8%81-%E0%B8%99/1707210761?i=1707210762",
+    "Youtube_Music": "https://music.youtube.com/watch?v=PP7CKaBKNcg&si=16m5fLg_JQLKrUNm"
   },
   {
     "id": 2,
     "name": "ฟ้ารักพ่อ",
-    "image": "img/card/DILF.png",
-    "link": "#"
+    "image": "/img/card/dilf.png"
   },
   {
     "id": 3,
     "name": "มาแตร์เดอี",
-    "image": "img/card/Materdei.png",
-    "link": "#"
+    "image": "/img/card/materdei.png"
   },
   {
     "id": 4,
     "name": "Sevan",
-    "image": "/img/card/sevan.png",
-    "link": "#"
+    "image": "/img/card/sevan.png"
   },
   {
     "id": 5,
     "name": "Booty Bomb",
-    "image": "/img/card/booty_bomb.png",
-    "link": "#"
+    "image": "/img/card/booty_bomb.png"
   },
   {
     "id": 6,
     "name": "มูเตลู",
-    "image": "/img/card/muteru.png",
-    "link": "#"
+    "image": "/img/card/muteru.png"
   },
   {
     "id": 7,
     "name": "ฉันจะฉาปเธอ",
-    "image": "/img/card/chab.png",
-    "link": "#"
+    "image": "/img/card/chab.png"
   },
   {
     "id": 8,
     "name": "โลเล",
-    "image": "/img/card/lolay.png",
-    "link": "#"
+    "image": "/img/card/lolay.png"
   },
   {
     "id": 9,
     "name": "DAMN",
-    "image": "/img/card/DAMN.png",
-    "link": "#"
+    "image": "/img/card/damn.png"
+  },
+  {
+    "id": 10,
+    "name": "เธอชอบมันหรือชอบร้องไห้มากกว่ากัน",
+    "image": "/img/card/hard.png",
+    "topic": "คนที่เจ็บใจที่สุดคือคนที่เห็นเธอโดนทำร้ายจิตใจ",
+    "profile": "/img/profile/pawarich.jpeg",
+    "makeby": "Pawarich Inthaphan",
+    "date": "19 July 2024",
+    "description": "หนึ่งในเรื่องราวจากเพลง “เธอชอบมันหรือชอบร้องไห้มากกว่ากัน - HardBoy” เพลงใหม่จากคณะ Hard Boy ค่าย Gene Labเจ้าของเพลง “Kiss MeBaby,ค่ำคืนนั้น” ที่คราวนี้กลับมาพร้อมเพลงเตือนสติให้คิดได้สักที“ว่าถ้าเขารักเราจริงเขาไม่ทำแบบนี้หรอก” ทุกคนส่วนใหญ่อาจจะรู้จักHard Boy จากเพลงเร็วของเขาแต่ครั้งนี้กลับมา พร้อมเพลงช้าบาดใจสำหรับคนที่เบื่อแล้วกับการที่จะปลอบใจเธอทุกครั้งที่โดนเขาทำร้ายเลยอยากบอกออกไปว่า“เธอชอบมันหรือชอบร้องไห้มากกว่า”แต่ถึงจะเป็นเพลงช้าก็ยังคงเอกลักษณ์ของความเป็น Glam Rock ของ Hard Boy ไว้เต็มเปี่ยมไม่ว่าจะเป็นการแต่งตัวไลน์ Solo พร้อม High Note จากคุณภีร์ และก็ภาพเรื่องราวใน MV ที่ค่อนข้างจะ 80'sเหมือนเดิมเลยส่วนเนื้อเพลงก็ค่อนข้างจะเตือนสติได้ดีเลยโดยเฉพาะท่อน“ถ้าชอบร้องไห้เหมือนเดิมทุกวันก็อยู่กับมันต่อไปถ้าสมองเธอนั้นทำงานได้ดีเธอจะรู้ต้องคิดยังไง”",
+    "spotify": "https://open.spotify.com/track/3o76rqI7ZLB9DJYxcbWa2Z?autoplay=true",
+    "Youtube": "https://youtu.be/V7DyE7qvtEg?si=0zhhuM10yrdLm1Ts",
+    "Apple_Music": "https://music.apple.com/th/album/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%A1-%E0%B8%99%E0%B8%AB%E0%B8%A3-%E0%B8%AD%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%A3-%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%AB-%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7-%E0%B8%B2%E0%B8%81-%E0%B8%99/1707210761?i=1707210762",
+    "Youtube_Music": "https://music.youtube.com/watch?v=PP7CKaBKNcg&si=16m5fLg_JQLKrUNm"
   }
 ]

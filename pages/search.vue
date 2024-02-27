@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="p-10 max-sm:p-5">
+    <div class="p-5 max-sm:p-5">
       <div class="grid gap-y-5">
         <div class="flex justify-between items-center">
           <img class="w-60 max-sm:w-40" src="/img/search_logo.png" />
@@ -38,7 +38,7 @@
         </div>
         <!--  before search -->
 
-        <div v-if="searchText.length == 0" class="grid gap-y-5">
+        <div v-if="searchText.length == 0" class="grid gap-y-3">
           <h1 class="text-2xl font-bold text-primary sm:text-3xl">Recently</h1>
           <!-- Hashtag -->
           <div class="flex gap-4 max-sm:gap-2">

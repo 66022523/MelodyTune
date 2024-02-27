@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{
-      ' fixed top-0 z-10 py-1 w-screen bg-white bg-opacity-30 transition-all duration-300 ease-in-out backdrop-blur-sm':
+      ' fixed top-0 z-50 py-1 w-screen bg-white bg-opacity-30 transition-all duration-300 ease-in-out backdrop-blur-sm':
         header,
     }"
   >
@@ -19,7 +19,7 @@
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li><NuxtLink to="/music">Music</NuxtLink></li>
-            <li><NuxtLink to="#">Genres</NuxtLink></li>
+            <li><NuxtLink to="/genres">Genres</NuxtLink></li>
             <li><NuxtLink to="#">New Releases</NuxtLink></li>
           </ul>
         </div>
@@ -38,7 +38,7 @@
               <HoverUnderline text="Music" link="/music" />
             </li>
             <li>
-              <HoverUnderline text="Genres" link="#" />
+              <HoverUnderline text="Genres" link="/genres" />
             </li>
             <li>
               <HoverUnderline text="NewReleases" link="/" />

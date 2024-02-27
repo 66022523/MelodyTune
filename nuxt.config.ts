@@ -36,7 +36,7 @@ export default defineNuxtConfig({
       noscript: [],
     },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: [
     "~/assets/css/main.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
