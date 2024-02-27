@@ -73,7 +73,7 @@
       <div class="flex gap-3 mx-6 my-4 pb-10 max-sm:mx-4 max-sm:flex-col">
         <main class="text-2xl w-2/3 max-md:w-full max-lg:text-lg">
           <article>
-            <p class="leading-9 tracking-wide">
+            <p class="leading-9 tracking-wide opacity-80">
               {{ id_filter[0].description }}
             </p>
           </article>
@@ -85,9 +85,11 @@
             Most Popular
           </h1>
           <div class="grid gap-y-5">
-            <CardSide />
-            <CardSide />
-            <CardSide />
+            <CardGenres_side
+              v-for="index in 3"
+              :key="index"
+              :genres="genres[index - 1]"
+            />
           </div>
         </aside>
       </div>
@@ -100,28 +102,38 @@
           class="flex flex-wrap justify-evenly mb-16 mt-10 max-md:gap-y-5 max-md:justify-between"
         >
           <Linksong
-            v-if="id_filter[0].Apple_Music !== undefined"
+            v-if="
+              id_filter[0].Apple_Music !== undefined &&
+              id_filter[0].Apple_Music !== ''
+            "
             text="Apple Music"
             image="/img/streaming/AppleMusic.png"
             class="max-sm:w-1/2"
             :link="id_filter[0].Apple_Music"
           />
           <Linksong
-            v-if="id_filter[0].spotify !== undefined"
+            v-if="
+              id_filter[0].spotify !== undefined && id_filter[0].spotify !== ''
+            "
             text="Spotify"
             image="/img/streaming/spotify.png"
             class="max-md:w-1/2"
             :link="id_filter[0].spotify"
           />
           <Linksong
-            v-if="id_filter[0].Youtube !== undefined"
+            v-if="
+              id_filter[0].Youtube !== undefined && id_filter[0].Youtube !== ''
+            "
             text="Youtube"
             image="/img/streaming/youtube.png"
             class="max-md:w-1/2"
             :link="id_filter[0].Youtube"
           />
           <Linksong
-            v-if="id_filter[0].Youtube_Music !== undefined"
+            v-if="
+              id_filter[0].Youtube_Music !== undefined &&
+              id_filter[0].Youtube_Music !== ''
+            "
             text="Youtube Music"
             image="/img/streaming/youtube_music.png "
             class="max-md:w-1/2"
@@ -137,9 +149,11 @@
           Most Popular
         </h1>
         <div class="grid gap-y-5">
-          <CardSide />
-          <CardSide />
-          <CardSide />
+          <CardGenres_side
+            v-for="index in 3"
+            :key="index"
+            :genres="genres[index - 1]"
+          />
         </div>
       </aside>
     </div>
@@ -178,11 +192,11 @@
 import { SendHorizontal } from "lucide-vue-next";
 import data_song from "~/data/songs.json";
 import data_comments from "~/data/comments.json";
+import genres from "~/data/genres.json";
 
 const route = useRoute();
 const song_id = route.params.id;
 const id_filter = data_song.filter((s) => s.id == song_id);
-console.log(id_filter[0].spotify);
 
 // comment
 const text_comment = ref("");

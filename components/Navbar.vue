@@ -20,7 +20,7 @@
           >
             <li><NuxtLink to="/music">Music</NuxtLink></li>
             <li><NuxtLink to="/genres">Genres</NuxtLink></li>
-            <li><NuxtLink to="#">New Releases</NuxtLink></li>
+            <li><NuxtLink to="/newReleases">New Releases</NuxtLink></li>
           </ul>
         </div>
         <!-- LoGo -->
@@ -41,7 +41,7 @@
               <HoverUnderline text="Genres" link="/genres" />
             </li>
             <li>
-              <HoverUnderline text="NewReleases" link="/" />
+              <HoverUnderline text="NewReleases" link="/newReleases" />
             </li>
           </ul>
         </div>

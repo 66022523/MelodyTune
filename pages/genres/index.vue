@@ -6,8 +6,20 @@
     >
       GENRES
     </h1>
-    <main class="flex flex-wrap gap-y-6 mt-8 justify-stretch">
-      <CardMusic v-for="s in 5" :key="s" class="w-1/3" />
+    <main
+      class="flex flex-wrap gap-y-6 mt-8 pb-8 justify-stretch max-md:gap-x-2 max-md:justify-center"
+    >
+      <CardMusic
+        v-for="g in genres"
+        :key="g"
+        :data="g"
+        :link="`/genres/${g.id}`"
+        class="w-1/3 max-lg:w-1/2 max-sm:w-full"
+      />
     </main>
   </div>
 </template>
+
+<script setup>
+import genres from "~/data/genres.json";
+</script>

@@ -21,8 +21,8 @@
             v-for="index in 3"
             :key="index"
             :topic="genres[index - 1].name"
-            :image="genres[index - 1].img"
-            :link="genres[index - 1].link"
+            :image="genres[index - 1].image"
+            :link="`/genres/${genres[index - 1].id}`"
             class="h-1/3"
           />
         </div>

@@ -2,22 +2,36 @@
   {
     "id": 1,
     "name": "HYBS ประกาศยุบวง นี่คือเพลงที่เราจะคิดถึงทุกครั้งที่ฟัง",
-    "img": "/img/playlist/hybs.jpeg",
-    "link": "/genres/#",
-    "date": "15 February 2024"
+    "image": "/img/playlist/hybs.jpeg",
+    "date": "15 February 2024",
+    "song_id": [10, 5, 2, 3]
   },
   {
     "id": 2,
     "name": "ส่งเพลงจีบทุกวันอยากเป็นแค่เพื่อนแกมั้ง",
-    "img": "/img/playlist/love.png",
-    "link": "/genres/#",
-    "date": "17 February 2024"
+    "image": "/img/playlist/love.png",
+    "date": "17 February 2024",
+    "song_id": [9, 6, 2, 1]
   },
   {
     "id": 3,
     "name": "ไม่มีหรอกเพลงคลั่งรัก มีแต่คนที่คลั่งน้ำตา",
-    "img": "/img/playlist/sad.png",
-    "link": "/genres/#",
-    "date": "19 February 2024"
+    "image": "/img/playlist/sad.png",
+    "date": "19 February 2024",
+    "song_id": [6, 5, 3, 4]
+  },
+  {
+    "id": 3,
+    "name": "ไม่มีหรอกเพลงคลั่งรัก มีแต่คนที่คลั่งน้ำตา",
+    "image": "/img/playlist/sad.png",
+    "date": "19 February 2024",
+    "song_id": [6, 5, 3, 4]
+  },
+  {
+    "id": 3,
+    "name": "ไม่มีหรอกเพลงคลั่งรัก มีแต่คนที่คลั่งน้ำตา",
+    "image": "/img/playlist/sad.png",
+    "date": "19 February 2024",
+    "song_id": [6, 5, 3, 4]
   }
 ]

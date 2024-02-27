@@ -4,12 +4,12 @@
       <div class="grid gap-y-5">
         <div class="flex justify-between items-center">
           <img class="w-60 max-sm:w-40" src="/img/search_logo.png" />
-          <button
+          <NuxtLink
             @click="$router.back()"
             class="btn btn-circle text-primary no-animation btn-neutral hover:text-white hover:bg-primary sm:mr-10"
           >
             <i class="fa-solid fa-xmark fa-xl"></i>
-          </button>
+          </NuxtLink>
         </div>
         <input
           type="search"

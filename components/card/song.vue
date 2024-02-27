@@ -15,5 +15,5 @@
 </template>
 
 <script setup>
-defineProps({ songs: Object });
+  defineProps({ songs: Object });
 </script>
