@@ -3,7 +3,7 @@
     <div class="p-5 max-sm:p-5">
       <div class="grid gap-y-5">
         <div class="flex justify-between items-center">
-          <img class="w-60 max-sm:w-40" src="/img/search_logo.png" />
+          <img preload class="w-60 max-sm:w-40" src="/img/search_logo.png" />
           <NuxtLink
             @click="$router.back()"
             class="btn btn-circle text-primary no-animation btn-neutral hover:text-white hover:bg-primary sm:mr-10"

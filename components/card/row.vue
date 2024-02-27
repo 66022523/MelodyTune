@@ -4,15 +4,22 @@
       <div class="text-3xl font-bold text-primary mt-12 pr-10">
         {{ number }}
       </div>
-      <div class="w-[200px] h-[150px] shadow-md shadow-black rounded-[10px]">
+      <NuxtLink
+        :to="link"
+        class="w-[200px] h-[150px] shadow-md shadow-black rounded-[10px] hover:scale-105 transition-all duration-200 ease-in-out"
+      >
         <img
           :src="image"
           class="w-full rounded-[10px] h-full object-cover object-center"
         />
-      </div>
-
+      </NuxtLink>
       <div class="top-[-50px] right-[100px] w-[700px] pl-10">
-        <p class="text-3xl font-bold mb-[8px] text-primary">{{ title }}</p>
+        <NuxtLink
+          :to="link"
+          class="text-3xl font-bold mb-[8px] text-primary hover:underline decoration-primary decoration-solid decoration-2"
+        >
+          {{ title }}
+        </NuxtLink>
         <p class="text-lg text-black line-clamp-3">{{ des }}</p>
       </div>
     </div>
@@ -48,5 +55,6 @@ defineProps({
   number: {
     type: String,
   },
+  link: String,
 });
 </script>

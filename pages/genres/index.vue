@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="max-w-screen-xl m-auto px-5 pb-8 mt-3">
+  <div class="max-w-screen-xl m-auto px-5 mt-3">
     <h1
       class="text-5xl font-bold text-primary pb-5 border-b-8 border-b-secondary border-solid"
     >

@@ -41,6 +41,7 @@
           :title="song_filter[index - 1].name"
           :des="song_filter[index - 1].description"
           :image="song_filter[index - 1].image"
+          :link="`/music/${song_filter[index - 1].id}`"
         />
       </div>
     </div>
