@@ -1,45 +1,47 @@
 <template>
   <div class="grid place-items-center min-h-screen">
     <div class="flex flex-col items-center gap-5">
-      <img class="w-[500px]" src="/img/Logo_with_icon.png" />
-      <form class="flex flex-col w-fit add-from">
-        <div>
+      <img class="w-[500px] max-sm:w-80" src="/img/Logo_with_icon.png" />
+      <form class="flex flex-col add-from">
+        <div class="max-md:w-screen-sm max-sm:px-5">
           <h1 class="text-xl font-bold mt-3 text-primary">E-mail</h1>
-          <div class="w-96 bg-white rounded-lg pl-5">
-          <input
-            class="bg-white justify-center flex h-12 rounded-lg outline-none placeholder-primary font-medium text-primary w-full"
-            type="email"
-            required
-            v-model="email"
-          />
-        </div></div>
-        <h1
-          class="text-md text-red-600 font-medium mt-1"
-          v-if="email.length !== 0"
-        >
-          {{ errorMessageEmail }}
-        </h1>
-        <div class="mb-2">
-          <h1 class="text-lg font-bold mt-3 text-primary">Password</h1>
-          <div class="w-96 bg-white rounded-lg pl-5">
-          <input
-            class="bg-white h-12 w-full rounded-lg outline-none text-primary"
-            type="password"
-            v-model="password"
-          /></div>
+          <div class="w-96 bg-white rounded-lg pl-5 max-sm:w-full">
+            <input
+              class="bg-white justify-center flex h-12 rounded-lg outline-none placeholder-primary font-medium text-primary w-full"
+              type="email"
+              required
+              v-model="email"
+            />
+          </div>
+          <p
+            class="text-md text-red-600 font-medium mt-1"
+            v-if="email.length !== 0"
+          >
+            {{ errorMessageEmail }}
+          </p>
         </div>
-        <p
-          class="text-md text-red-600 font-medium mt-1"
-          v-if="password.length !== 0"
-        >
-          {{ errorMessagePasswordEnglish }}
-        </p>
-        <p
-          class="text-md text-red-600 font-medium mt-1"
-          v-if="password.length !== 0"
-        >
-          {{ errorMessagePasswordLength }}
-        </p>
+        <div class="mb-2 max-sm:w-screen max-sm:px-5">
+          <h1 class="text-lg font-bold mt-3 text-primary">Password</h1>
+          <div class="w-96 bg-white rounded-lg pl-5 max-sm:w-full">
+            <input
+              class="bg-white h-12 w-full rounded-lg outline-none text-primary"
+              type="password"
+              v-model="password"
+            />
+          </div>
+          <p
+            class="text-md text-red-600 font-medium mt-1"
+            v-if="password.length !== 0"
+          >
+            {{ errorMessagePasswordEnglish }}
+          </p>
+          <p
+            class="text-md text-red-600 font-medium mt-1"
+            v-if="password.length !== 0"
+          >
+            {{ errorMessagePasswordLength }}
+          </p>
+        </div>
         <div class="flex justify-end text-md font-bold text-primary mr-4">
           <NuxtLink to="/signup">Sign Up</NuxtLink>
         </div>

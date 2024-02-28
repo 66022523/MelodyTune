@@ -26,11 +26,11 @@
       <div class="flex flex-col justify-stretch items-start mb-8 md:flex-row">
         <div class="w-full mb-8 order-2 md:order-first md:mb-0">
           <div
-            class="flex pt-2 flex-wrap justify-center items-center gap-2 w-full text-primary text-xl font-medium max-sm:flex-col max-sm:mt-5"
+            class="flex px-1 pt-2 flex-wrap justify-center items-center gap-2 w-full text-primary text-xl font-medium max-sm:flex-col max-sm:mt-5"
           >
             <NuxtLink
               :to="`/author/${id_filter[0].makeby}`"
-              class="flex items-center text-center gap-2 max-sm:flex-col"
+              class="flex items-center text-center gap-2 max-lg:flex-col"
             >
               <img :src="id_filter[0].profile" class="size-10 rounded-full" />
               {{ id_filter[0].makeby }}
