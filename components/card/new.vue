@@ -6,7 +6,7 @@
     >
       <img
         :src="song.image"
-        class="w-full rounded-xl h-full object-cover object-top"
+        class="w-full rounded-xl h-full object-cover object-center"
       />
     </NuxtLink>
     <div class="top-[-50px] right-[100px] w-[670px] flex flex-col gap-y-5">

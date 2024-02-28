@@ -212,9 +212,11 @@ comments_filter.value = data_comments.filter((c) => {
 
 const comment = () => {
   if (text_comment.value !== "") {
-    comments_filter.value.push({ name: "123", comments: text_comment.value });
+    comments_filter.value.push({
+      name: "Pxngnxng",
+      comments: text_comment.value,
+    });
     text_comment.value = "";
-    saveData();
   }
 };
 </script>
