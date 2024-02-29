@@ -2,7 +2,7 @@
   <div class="grid place-items-center min-h-screen">
     <div class="flex flex-col items-center gap-5">
       <img class="w-[500px] max-sm:w-80" src="/img/Logo_with_icon.png" />
-      <form class="flex flex-col add-from">
+      <form class="flex flex-col add-from" @submit.prevent="onSubmit">
         <div class="max-md:w-screen-sm max-sm:px-5">
           <h1 class="text-xl font-bold mt-3 text-primary">E-mail</h1>
           <div class="w-96 bg-white rounded-lg pl-5 max-sm:w-full">
@@ -79,9 +79,24 @@ export default {
     };
   },
   methods: {
-    onSubmit(event) {
-      event.preventDefault();
-      console.log(event);
+    onSubmit() {
+      const email = this.email;
+      const password = this.password;
+      const database = localStorage.getItem("database");
+      const snapshot = JSON.parse(database);
+      const users = snapshot.users;
+      const data = users.find(
+        (u) => u.email === email && u.password === password
+      );
+
+      if (data) {
+        localStorage.setItem("session", JSON.stringify(data));
+        navigateTo(`/profile/${data.username}`);
+      } else if (!users.find((u) => u.email === email)) {
+        this.errorMessageEmail = "ไม่พบบัญชีนี้ในระบบ";
+      } else {
+        this.errorMessageEmail = "ไม่พบบัญชีนี้หรือรหัสผ่านไม่ถูกต้อง";
+      }
     },
     validateEmail(email) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {

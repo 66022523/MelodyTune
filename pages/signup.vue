@@ -2,7 +2,7 @@
   <div class="h-screen grid place-items-center">
     <div>
       <img class="w-96 mx-3 max-sm:w-80" src="/img/Logo_with_icon.png" />
-      <form>
+      <form @submit.prevent="onSubmit">
         <div
           class="flex justify-center items-center gap-x-3 bg-white mt-5 rounded-lg"
         >
@@ -14,8 +14,12 @@
             type="text"
             placeholder="USER NAME"
             required
+            v-model="username"
           />
         </div>
+        <p class="text-md text-red-600 font-medium mt-1">
+          {{ errorMessageUsername }}
+        </p>
 
         <div
           class="flex justify-center items-center gap-x-3 bg-white mt-5 rounded-lg"
@@ -127,6 +131,8 @@
 export default {
   data() {
     return {
+      username: "",
+      errorMessageUsername: "",
       email: "",
       errorMessageEmail: "",
       password: "",
@@ -141,9 +147,40 @@ export default {
     };
   },
   methods: {
-    onSubmit(event) {
-      event.preventDefault();
-      console.log(event);
+    onSubmit() {
+      const username = this.username;
+      const email = this.email;
+      const password = this.password;
+      const user = {
+        username,
+        email,
+        password,
+      };
+
+      const database = localStorage.getItem("database");
+
+      if (database) {
+        const snapshot = JSON.parse(database);
+        const users = snapshot.users;
+
+        if (users.find((u) => u.username === username))
+          return (this.errorMessageUsername = "ชื่อนี้ถูกใช้งานแล้ว");
+        if (users.find((u) => u.email === email))
+          return (this.errorMessageEmail = "มีบัญชีนี้อยู่แล้ว");
+
+        snapshot.users.push(user);
+        localStorage.setItem("database", JSON.stringify(snapshot));
+      } else {
+        localStorage.setItem(
+          "database",
+          JSON.stringify({
+            users: [user],
+          })
+        );
+      }
+
+      localStorage.setItem("session", JSON.stringify(user));
+      navigateTo("/signin");
     },
     validateEmail(email) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -156,8 +193,8 @@ export default {
       const containsUppercase = /[A-Z]/.test(password);
       const containsLowercase = /[a-z]/.test(password);
       const containsNumber = /[0-9]/.test(password);
-      const containsSpecial = /[#?!@$%^&*-]/.test(password);
-      const isEnglish = /^[A-Za-z0-9#?!@$%^&*-]+$/.test(password);
+      const containsSpecial = /[#?!@$%^&*-\_]/.test(password);
+      const isEnglish = /^[A-Za-z0-9#?!@$%^&*-\_]+$/.test(password);
 
       this.errorMessagePasswordUpper = "";
       this.errorMessagePasswordLower = "";

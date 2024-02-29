@@ -25,7 +25,7 @@
               </div>
             </label>
           </div>
-          <div class="border-none cursor-pointer">
+          <div class="border-none cursor-pointer" @click="shareLink">
             <i class="fas fa-share fa-2xs"></i>
           </div>
           <div class="border-none cursor-pointer">
@@ -57,4 +57,24 @@ const genres_filter = genres.filter((g) => g.id == genres_id);
 const song_filter = data_song.filter((s) =>
   genres_filter[0].song_id.includes(s.id)
 );
+
+const shareLink = async () => {
+  const shareData = {
+    url: route.fullPath,
+  };
+
+  try {
+    if (!navigator || !navigator.share || !navigator.canShare)
+      alert("เบราว์เซอร์ของคุณไม่รอบรับฟีเจอร์การแชร์เนื้อหา");
+    else if (!navigator.canShare(shareData))
+      alert(
+        'ขออภัยเราไม่สามารถแชร์เนื้อหาบางอย่างได้ในขณะนี้ หากมีปัญหาใดๆ กรุณาแจ้งให้เราทราบผ่านป่ม "?"'
+      );
+    else {
+      await navigator.share(shareData);
+    }
+  } catch (error) {
+    alert(`เกิดข้อผิดพลาดขณะกำลังแชร์เนื้อหา:\n${error}`);
+  }
+};
 </script>
