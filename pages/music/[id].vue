@@ -8,18 +8,23 @@
         :style="{ backgroundImage: 'url(' + id_filter[0].image + ')' }"
       >
         <div
-          class="absolute bottom-5 right-10 flex-col items-center gap-y-3 hidden md:flex"
+          class="absolute bottom-5 right-10 gap-x-3 items-end gap-y-3 hidden md:flex"
         >
-          <p class="font-semibold text-xl text-white text-center">ถูกใจ</p>
-          <label class="swap w-fit text-white">
-            <input type="checkbox" />
-            <div class="swap-on">
-              <i class="fa-solid fa-heart fa-2xl"></i>
-            </div>
-            <div class="swap-off">
-              <i class="fa-regular fa-heart fa-2xl"></i>
-            </div>
-          </label>
+          <div class="text-white" @click="shareLink">
+            <i class="fas fa-share fa-2xl"></i>
+          </div>
+          <div class="flex flex-col items-center gap-y-3">
+            <p class="font-semibold text-xl text-white text-center">ถูกใจ</p>
+            <label class="swap w-fit text-white">
+              <input type="checkbox" />
+              <div class="swap-on">
+                <i class="fa-solid fa-heart fa-2xl"></i>
+              </div>
+              <div class="swap-off">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
       <!-- top -->
@@ -62,6 +67,9 @@
                 <i class="fa-regular fa-heart fa-2xl"></i>
               </div>
             </label>
+            <div class="text-primary" @click="shareLink">
+              <i class="fas fa-share fa-2xl"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -219,6 +227,27 @@ const comment = () => {
       comments: text_comment.value,
     });
     text_comment.value = "";
+  }
+};
+
+// share
+const shareLink = async () => {
+  const shareData = {
+    url: route.fullPath,
+  };
+
+  try {
+    if (!navigator || !navigator.share || !navigator.canShare)
+      alert("เบราว์เซอร์ของคุณไม่รอบรับฟีเจอร์การแชร์เนื้อหา");
+    else if (!navigator.canShare(shareData))
+      alert(
+        'ขออภัยเราไม่สามารถแชร์เนื้อหาบางอย่างได้ในขณะนี้ หากมีปัญหาใดๆ กรุณาแจ้งให้เราทราบผ่านป่ม "?"'
+      );
+    else {
+      await navigator.share(shareData);
+    }
+  } catch (error) {
+    alert(`เกิดข้อผิดพลาดขณะกำลังแชร์เนื้อหา:\n${error}`);
   }
 };
 </script>
