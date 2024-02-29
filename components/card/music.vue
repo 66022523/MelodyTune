@@ -3,7 +3,9 @@
     :to="link"
     class="grid place-items-center z-0 xl:hover:scale-110 transition-all duration-300 xl:hover:z-10"
   >
-    <div class="h-[510px] w-[350px] rounded-3xl bg-white shadow-xl relative">
+    <div
+      class="h-[510px] max-w-[350px] rounded-3xl bg-white shadow-xl relative"
+    >
       <img
         class="rounded-t-3xl h-64 w-full object-cover object-top"
         :src="data.image"

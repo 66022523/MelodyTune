@@ -1,35 +1,38 @@
 <template>
   <Navbar />
   <div class="max-w-screen-xl m-auto pt-2 px-5 pb-10">
-    <div class="bg-white w-full h-fit rounded-[20px] relative pb-5 shadow-lg">
-      <img
-        :src="genres_filter[0].image"
-        class="w-full h-[550px] rounded-[20px] object-cover shadow-lg max-lg:h-96"
-      />
-      <div
-        class="absolute top-[410px] left-[30px] text-primary text-[68px] font-bold leading-none max-lg:top-52 max-md:top-64"
-      >
-        <h1 class="text-4xl max-md:text-2xl">
-          {{ genres_filter[0].name }} <i class="fas fa-music text-2xl mt-1"></i>
-        </h1>
+    <div class="bg-white w-full h-fit rounded-[20px] pb-5 shadow-lg">
+      <div class="relative">
+        <img
+          :src="genres_filter[0].image"
+          class="w-full h-[550px] rounded-[20px] object-cover shadow-lg max-lg:h-96"
+        />
+        <div
+          class="absolute top-[410px] left-[30px] text-primary text-[68px] font-bold leading-none max-lg:top-52 max-md:top-56"
+        >
+          <h1 class="text-4xl max-md:text-2xl">
+            {{ genres_filter[0].name }}
+            <i class="fas fa-music text-2xl mt-1"></i>
+          </h1>
 
-        <div class="flex items-center gap-x-4">
-          <div class="mt-1">
-            <label class="swap w-fit">
-              <input type="checkbox" />
-              <div class="swap-on">
-                <i class="fa-solid fa-heart fa-2xs"></i>
-              </div>
-              <div class="swap-off">
-                <i class="fa-regular fa-heart fa-2xs"></i>
-              </div>
-            </label>
-          </div>
-          <div class="border-none cursor-pointer" @click="shareLink">
-            <i class="fas fa-share fa-2xs"></i>
-          </div>
-          <div class="border-none cursor-pointer">
-            <i class="fas fa-ellipsis-h fa-2xs"></i>
+          <div class="flex items-center gap-x-4">
+            <div class="mt-1">
+              <label class="swap w-fit">
+                <input type="checkbox" />
+                <div class="swap-on">
+                  <i class="fa-solid fa-heart fa-2xs"></i>
+                </div>
+                <div class="swap-off">
+                  <i class="fa-regular fa-heart fa-2xs"></i>
+                </div>
+              </label>
+            </div>
+            <div class="border-none cursor-pointer" @click="shareLink">
+              <i class="fas fa-share fa-2xs"></i>
+            </div>
+            <div class="border-none cursor-pointer">
+              <i class="fas fa-ellipsis-h fa-2xs"></i>
+            </div>
           </div>
         </div>
       </div>

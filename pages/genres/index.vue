@@ -7,7 +7,7 @@
       GENRES
     </h1>
     <main
-      class="flex flex-wrap gap-y-6 mt-8 pb-8 justify-stretch max-md:gap-x-2 max-md:justify-center"
+      class="flex flex-wrap gap-y-6 mt-8 pb-8 justify-stretch max-md:gap-x-2 max-md:justify-center bg-black"
     >
       <CardMusic
         v-for="(genres, index) in paginatedData"
