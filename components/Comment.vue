@@ -5,7 +5,7 @@
         class="avatar size-10 rounded-full ring ring-white ring-offset-base-100 ring-offset-0"
       >
         <div class="rounded-full">
-          <img src="/img/profile/pawarich.jpeg" />
+          <img src="/img/profile/guest.jpeg" />
         </div>
       </div>
       <span class="text-white font-semibold text-2xl">{{ name }}</span>

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="link"
-    class="grid place-items-center z-0 hover:scale-110 transition-all duration-300 hover:z-10"
+    class="grid place-items-center z-0 hover:scale-110 transition-all duration-300 md:hover:z-10"
   >
     <div class="h-[510px] w-[350px] rounded-3xl bg-white shadow-xl relative">
       <img

@@ -29,11 +29,11 @@
             class="flex px-1 pt-2 flex-wrap justify-center items-center gap-2 w-full text-primary text-xl font-medium max-sm:flex-col max-sm:mt-5"
           >
             <NuxtLink
-              :to="`/author/${id_filter[0].makeby}`"
+              :to="`/author/${author_data.first_name}`"
               class="flex items-center text-center gap-2 max-lg:flex-col"
             >
-              <img :src="id_filter[0].profile" class="size-10 rounded-full" />
-              {{ id_filter[0].makeby }}
+              <img :src="author_data.image" class="size-10 rounded-full" />
+              {{ author_data.first_name }} {{ author_data.last_name }}
             </NuxtLink>
             <p>
               <i class="fa-regular fa-calendar fa-sm"></i>
@@ -195,10 +195,13 @@ import { SendHorizontal } from "lucide-vue-next";
 import data_song from "~/data/songs.json";
 import data_comments from "~/data/comments.json";
 import genres from "~/data/genres.json";
+import author from "~/data/author.json";
 
 const route = useRoute();
 const song_id = route.params.id;
 const id_filter = data_song.filter((s) => s.id == song_id);
+const author_data = author.find((a) => a.id == id_filter[0].id_author);
+console.log(author_data.first_name);
 
 // comment
 const text_comment = ref("");
