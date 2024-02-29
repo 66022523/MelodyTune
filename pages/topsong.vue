@@ -33,6 +33,7 @@
           :apple_music="top_song[index - 1].Apple_Music"
           :yt="top_song[index - 1].Youtube"
           :yt_music="top_song[index - 1].Youtube_Music"
+          :link="`/music/${top_song[index - 1].id}`"
           class="w-full"
         />
       </div>

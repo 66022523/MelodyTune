@@ -9,7 +9,7 @@
       </div>
       <div class="w-1/2 flex flex-col justify-between">
         <p
-          class="text-xl text-black font-semibold max-lg:text-base hover:text-primary hover:font-bold transition-all duration-75 ease-in-out"
+          class="text-xl text-black font-semibold max-lg:text-base xl:hover:text-primary xl:hover:font-bold transition-all duration-75 ease-in-out"
         >
           {{ genres.name }}
         </p>
