@@ -4,12 +4,12 @@
     <div class="bg-white w-full h-fit rounded-[20px] relative pb-5 shadow-lg">
       <img
         :src="genres_filter[0].image"
-        class="w-full h-[550px] rounded-[20px] object-cover shadow-lg"
+        class="w-full h-[550px] rounded-[20px] object-cover shadow-lg max-lg:h-96"
       />
       <div
-        class="absolute top-[410px] left-[30px] text-primary text-[68px] font-bold leading-none"
+        class="absolute top-[410px] left-[30px] text-primary text-[68px] font-bold leading-none max-lg:top-52 max-md:top-64"
       >
-        <h1 class="text-4xl">
+        <h1 class="text-4xl max-md:text-2xl">
           {{ genres_filter[0].name }} <i class="fas fa-music text-2xl mt-1"></i>
         </h1>
 

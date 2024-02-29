@@ -2,18 +2,26 @@
   <Navbar />
   <div class="max-w-screen-xl mx-auto pt-2 px-5 pb-10">
     <div class="max-w-[1200px] h-fit">
-      <div class="bg-primary w-full h-80 rounded-3xl px-56 pt-10">
-        <h1 class="text-white font-bold text-5xl text-center mb-5">
+      <div
+        class="bg-primary w-full h-fit rounded-3xl grid place-items-center py-10 gap-y-5 sm:min-h-80"
+      >
+        <h1
+          class="text-white font-bold text-5xl text-center w-2/3 max-sm:text-3xl"
+        >
           THE MELODYTUNE COMMUNITY'S 10 BEST SONGS OF 2024
         </h1>
-        <p class="text-white opacity-70 font-semibold text-xl text-center">
+        <p
+          class="text-white opacity-70 font-semibold text-xl text-center w-2/3 max-sm:text-lg"
+        >
           เมื่อเราพูดถึงเพลงที่ได้รับความนิยมในปี 2024
           มีเพลงที่ได้รับความนิยมและ ชื่นชอบจากชุมชุนของ Melodytune มากมาย
           นับเป็นเพลงที่ได้รับฟังอย่าง แพร่หลายและได้รับความรักจากผู้ฟังมากมาย
           นี่คือ 10 เพลงยอดนิยมของ Melodytune ในปี 2024
         </p>
       </div>
-      <div class="flex flex-wrap w-full gap-y-16 mt-9">
+      <div
+        class="grid grid-cols-2 w-full gap-y-16 gap-x-4 mt-9 max-sm:grid-cols-1"
+      >
         <CardTop_song
           v-for="index in top_song.length"
           :key="index"
@@ -25,6 +33,7 @@
           :apple_music="top_song[index - 1].Apple_Music"
           :yt="top_song[index - 1].Youtube"
           :yt_music="top_song[index - 1].Youtube_Music"
+          class="w-full"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen grid place-items-center">
     <div>
-      <img class="w-96 mx-3" src="/img/Logo_with_icon.png" />
+      <img class="w-96 mx-3 max-sm:w-80" src="/img/Logo_with_icon.png" />
       <form>
         <div
           class="flex justify-center items-center gap-x-3 bg-white mt-5 rounded-lg"
