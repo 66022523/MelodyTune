@@ -1,9 +1,12 @@
 <template>
-  <NuxtLink class="group text-xl transition-all duration-300 ease-in-out" :to="link">
+  <NuxtLink
+    class="group text-xl transition-all duration-300 ease-in-out"
+    :to="link"
+  >
     <span
-      class="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2.5px] bg-no-repeat group-hover:bg-[length:100%_2.5px] transition-all duration-300 ease-out"
+      class="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2.5px] bg-no-repeat lg:group-hover:bg-[length:100%_2.5px] transition-all duration-300 ease-out"
     >
-      {{text}}
+      {{ text }}
     </span>
   </NuxtLink>
 </template>
@@ -12,10 +15,10 @@
 defineProps({
   text: {
     type: String,
-    default: "text"
+    default: "text",
   },
   link: {
-    type : String
-  }
-})
+    type: String,
+  },
+});
 </script>

@@ -83,6 +83,4 @@ const params = route.params.name;
 
 const author_page = author.find((name) => name.first_name === params);
 const songs = data_song.filter((s) => author_page.song_id.includes(s.id));
-console.log(author_page);
-console.log(songs);
 </script>

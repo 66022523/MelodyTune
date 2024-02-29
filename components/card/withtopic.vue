@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="card bg-primary shadow-xl hover:scale-95 transition-all duration-[450] ease-out"
+    class="card bg-primary shadow-xl xl:hover:scale-95 transition-all duration-[450] ease-out"
     :to="link"
   >
     <figure>
@@ -27,7 +27,7 @@ defineProps({
   },
   link: {
     type: String,
-    default: "#"
+    default: "#",
   },
 });
 </script>

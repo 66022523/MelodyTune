@@ -201,7 +201,6 @@ const route = useRoute();
 const song_id = route.params.id;
 const id_filter = data_song.filter((s) => s.id == song_id);
 const author_data = author.find((a) => a.id == id_filter[0].id_author);
-console.log(author_data.first_name);
 
 // comment
 const text_comment = ref("");
