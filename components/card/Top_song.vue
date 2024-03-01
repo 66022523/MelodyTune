@@ -17,19 +17,20 @@
       </NuxtLink>
       <div class="flex mt-1 gap-x-5 max-lg:gap-x-2">
         <NuxtLink
-          :to="spotify"
-          v-if="spotify !== undefined && spotify !== ''"
-          target="_blank"
-          ><img
-            class="size-12 object-cover object-center rounded-full max-lg:size-9 max-sm:size-12"
-            src="/img/streaming/spotify.png " /></NuxtLink
-        ><NuxtLink
           :to="apple_music"
           target="_blank"
           v-if="apple_music !== undefined && apple_music !== ''"
           ><img
             class="size-12 object-cover object-center rounded-full max-lg:size-9 max-sm:size-12"
-            src="/img/streaming/AppleMusic.png" /></NuxtLink
+            src="/img/streaming/AppleMusic.png"
+          /> </NuxtLink
+        ><NuxtLink
+          :to="spotify"
+          v-if="spotify !== undefined && spotify !== ''"
+          target="_blank"
+          ><img
+            class="size-12 object-cover object-center rounded-full max-lg:size-9 max-sm:size-12"
+            src="/img/streaming/spotify.png" /></NuxtLink
         ><NuxtLink :to="yt" v-if="yt !== undefined && yt !== ''" target="_blank"
           ><img
             class="size-12 object-cover object-center rounded-full max-lg:size-9 max-sm:size-12"
