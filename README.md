@@ -10,7 +10,7 @@
 npm install
 ```
 
-เปิด Visual Studio Code เพื่อแก้ไขโปรเจกต์:
+เปิด Visual Studio Code เพื่อแก้ไขโปรเจกต์
 
 ```shell
 code .
@@ -18,7 +18,7 @@ code .
 
 ## Development
 
-เริ่มเปิดเซิร์ฟเวอร์ที่ http://localhost:3000:
+เริ่มเปิดเซิร์ฟเวอร์ที่ http://localhost:3000
 
 ```shell
 npm run dev
@@ -26,13 +26,13 @@ npm run dev
 
 ## Build the Website
 
-สร้างเว็บไซต์สำหรับการใช้งานจริงด้วยคำสั่งดังนี้:
+สร้างเว็บไซต์สำหรับการใช้งานจริงด้วยคำสั่ง
 
 ```shell
 npm run build
 ```
 
-หรือดูตัวอย่างเว็บไซต์ที่สร้างไว้ด้วยคำสั่งดังนี้:
+หรือดูตัวอย่างเว็บไซต์ที่สร้างไว้ด้วยคำสั่ง
 
 ```shell
 npm run preview
